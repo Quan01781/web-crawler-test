@@ -12,7 +12,7 @@ HtmlWeb htmlWeb = new HtmlWeb()
 HtmlDocument document = htmlWeb.Load("https://www.");
 
 
-var threadItems = document.DocumentNode.QuerySelectorAll("ul#threads > li").ToList();
+var threadItems = document.DocumentNode.QuerySelectorAll("ul#threads > li").ToList(); // find id = thread in `li` node
 
 var objs = new List<object>();
 foreach (var item in threadItems)
